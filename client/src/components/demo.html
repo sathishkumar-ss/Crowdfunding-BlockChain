@@ -1,0 +1,19 @@
+import React from "react";
+
+function App() {
+  const htmlCode = `
+    <html>
+      <head>
+        <title>My Webpage</title>
+      </head>
+      <body>
+        <h1>Welcome to my webpage!</h1>
+        <p>Here's some sample text.</p>
+      </body>
+    </html>
+  `;
+
+  return <div dangerouslySetInnerHTML={{ __html: htmlCode }} />;
+}
+
+export default App;
